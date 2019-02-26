@@ -11,7 +11,7 @@ namespace Class
             optionsBuilder.UseSqlite("Data source = ClassDb.db");
         }
  
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        protected override void OnModelCreating(ModelBuilder modelBuilder) //creates a composit key for StudentCourse
         {
             modelBuilder.Entity<StudentCourse>()
                 .HasKey(e => new {e.StudetnID, e.CourseID});
@@ -46,6 +46,7 @@ namespace Class
     public class StudentCourse //association table
     {
   //      public int StudentCourseID {get; set;}
+  //"The child/dependent side could not be determined for the one-to-one relationship between 'StudentCourse.Student' and 'Student.StudetnCourses'. To identify the child/dependent side of the relationship, configure the foreign key property."
 
         public int StudetnID {get; set;}
 
