@@ -46,9 +46,6 @@ namespace Class
 
     public class StudentCourse //association table
     {
-  //      public int StudentCourseID {get; set;}
-  //"The child/dependent side could not be determined for the one-to-one relationship between 'StudentCourse.Student' and 'Student.StudetnCourses'. To identify the child/dependent side of the relationship, configure the foreign key property."
-
         public int StudentID {get; set;}
 
         public int CourseID {get; set;}

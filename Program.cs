@@ -9,7 +9,7 @@ namespace Class
         static void Main(string[] args)
         {
 
-            using (var db = new SchoolDbContext())
+            using (var db = new SchoolDbContext()) //add data to database
                 {
                     db.Database.EnsureDeleted();
                     db.Database.EnsureCreated();
@@ -45,10 +45,9 @@ namespace Class
                         db.Add(Link5);
 
                     db.SaveChanges();
-
-
-
                 }
+
+                
         }
     }
 }
