@@ -54,5 +54,7 @@ namespace Class
 
         public Course Course {get; set;}
 
+        public double GPA {get; set;}
+
     }
 }
