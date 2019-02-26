@@ -41,7 +41,7 @@ namespace Class
                         db.Add(Link3);
                         StudentCourse Link4 = new StudentCourse {Student = Suzy, Course = Math};
                         db.Add(Link4);
-                        StudentCourse Link5 = new StudentCourse {Student = Jaden, Course = Math};
+                        StudentCourse Link5 = new StudentCourse {Student = Jaden, Course = Math}; 
                         db.Add(Link5);
 
                     db.SaveChanges();

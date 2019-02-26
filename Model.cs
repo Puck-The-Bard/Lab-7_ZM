@@ -26,11 +26,12 @@ namespace Class
     public class Student
     {
         public int StudentID {get; set;} //pk
+
         public String FirstName {get; set;}
 
         public String LastName {get; set;}
 
-        public StudentCourse StudetnCourses {get; set;} //navigation property
+        public List<StudentCourse> StudetnCourses {get; set;} //navigation property
     }
 
     public class Course
@@ -39,7 +40,7 @@ namespace Class
 
         public string CourseName {get; set;}
 
-        public StudentCourse StudetnCourses {get; set;} //navigation property
+        public List<StudentCourse> StudetnCourses {get; set;} //navigation property
 
     }
 
