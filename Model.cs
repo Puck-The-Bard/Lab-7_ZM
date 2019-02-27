@@ -32,6 +32,11 @@ namespace Class
         public String LastName {get; set;}
 
         public List<StudentCourse> StudetnCourses {get; set;} //navigation property
+
+        public override string ToString()
+        {
+            return$"{FirstName} {LastName}";
+        }
     }
 
     public class Course
@@ -42,6 +47,10 @@ namespace Class
 
         public List<StudentCourse> StudetnCourses {get; set;} //navigation property
 
+        public override string ToString() 
+        {
+            return $"{CourseName}";
+        }
     }
 
     public class StudentCourse //association table
@@ -55,6 +64,11 @@ namespace Class
         public Course Course {get; set;}
 
         public double GPA {get; set;}
+
+        public override string ToString()
+        {
+            return $"{GPA}";
+        }
 
     }
 }
